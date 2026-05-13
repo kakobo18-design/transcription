@@ -1,0 +1,86 @@
+/* Fonts: Uber Move family (local) */
+@font-face {
+  font-family: 'UberMove';
+  src: url('/static/fonts/UberMoveMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+ body { font-family: "UberMove"; 
+    margin: 1.5rem; }
+
+ h1 {
+  margin-bottom: 1rem;
+ }
+
+ button { margin: 0.5rem; 
+    padding: 0.5rem 1rem; }
+
+ .toolbar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1rem 0.5rem;
+ }
+
+ .toolbar-label {
+  font-weight: 600;
+ }
+
+ .toolbar-select {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: #fff;
+  font-family: inherit;
+ }
+ 
+
+  pre { background: #f7f7f7; 
+    padding: 0.75rem; 
+    border-radius: 5px; 
+    min-height: 220px;
+    height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    scrollbar-gutter: stable;
+}
+
+  /* Smooth “pop in” transition for new text */
+  .transcript-line {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: fadeInUp 0.3s ease-out forwards;
+  }
+
+  .lang-block { margin: 1rem 0; 
+    }
+
+ .ButtonConsoleDiv {
+  display: flex;
+  flex-direction: row;          /* optional; row is default */
+  justify-content: center;      /* center horizontally */
+  align-items: center;          /* center vertically */
+  
+}
+
+#downloadBtn {
+  display: none;
+}
+
+
+
+  
